@@ -1,0 +1,156 @@
+body{
+    display:flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+.payment-div{
+    width: 300px;
+    height:650px;
+    border-radius: 25px;    
+    border: 1px solid black;
+    align-items: center;
+    background-color: white;
+}
+.payment-heading, .confirmation-heading{
+    padding:25px;
+    padding-bottom:0px;
+}
+.payment-price-options{
+    background-color:beige;
+    padding-top:20px;
+}
+.grey{
+    color:grey;
+}
+.light-grey{
+    color:grey;
+}
+.big{
+    font-size: 20px;
+}
+.left-margin{
+    margin-left:25px;
+}
+.box{
+    width:calc(100% - 50px);
+    height:25px;
+    border-bottom: 1px solid lightgray;
+}
+.payment-option{
+    display:grid;
+    width:calc(100% - 50px);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.options{
+    text-align: center;
+    padding:10px;
+}
+img{
+    width:10px;
+    height:10px;
+}
+.blue{    
+    color:blue;
+}
+input{
+    height: 40px;
+    width:calc(100% - 50px);    
+    border-radius: 12px;
+}
+.padding-above{
+    padding:20px 0px;
+}
+.margin-above{
+    margin-top:20px;
+}
+.card-details{
+    display:flex;
+    align-items: center;
+}
+.date{
+    width:35%;
+}
+.cvv{
+    width:35%;
+}
+.payment-button, .confirm-button{
+    margin:20px 25px;
+    height:40px;
+    width:calc(100% - 50px); 
+    background-color: blue;
+    color:white;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.confirmation-div{
+    width: 180px;
+    height:280px;
+    border-radius:12px;
+    background-color: white;
+    display:none;
+}
+.confirm-para{
+    width:calc(100% - 50px);    
+}
+.confirm-button{
+    background-color: red;
+}
+.center{
+    margin-left:50px;
+}
+a:hover{
+    color:black;
+    cursor:pointer;
+}
+.success-div{
+    height:200px;
+    width:200px;
+    background-color: rgb(72, 202, 72);
+    border-radius:12px;
+    padding-top:50px;
+    display:none;
+}
+.img-tick, .success-heading, .success-para{
+    width:100%;
+    text-align:center;
+    color:white;
+}
+.img-tick img{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+}
+.invoice-div{
+    height:220px;
+    width:300px;
+    background-color: white;
+    border-radius:25px;
+    border:1px solid black;
+    display:none;
+}
+.invoice-heading{
+    display: block
+}
+.invoice-details{
+    background-color: bisque;
+    height:50px;
+    margin-top:100px;
+}
+.left{
+    float:left;
+    margin-left:25px; 
+}
+.right{
+    float:right;
+    margin-right:25px;
+}
+.invoice-total{
+    margin-top:25px;
+}
+.margin-above-dbl{
+    margin-top: 35px;
+}

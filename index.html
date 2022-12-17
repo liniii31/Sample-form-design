@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Payment App</title>
+</head>
+<body>
+    <div class="payment-div">
+        <div class="payment-heading">
+            <h1>Payment</h1>
+            <p class="grey">Complete your pro membership</p>
+        </div>
+        <div class="payment-price-options">
+            <div class="left-margin"><b><span class="light-grey big">$</span><span class="big">869</span><span class="light-grey">USD</span></b></div>
+            <div class="box left-margin"></div>
+            <div class="payment-option left-margin">
+                <div class="options"><img alt="tick" src="./565-5650948_green-check-mark-clip-art.png"/> Analytics</div>
+                <div class="options"><img alt="tick" src="./565-5650948_green-check-mark-clip-art.png"/> Messaging</div>
+                <div class="options"><img alt="tick" src="./565-5650948_green-check-mark-clip-art.png"/> Support</div>
+                <div class="options"><img alt="tick" src="./565-5650948_green-check-mark-clip-art.png"/> Discount</div>
+            </div>
+            <div class="blue left-margin padding-above">Know More</div>
+        </div>
+        <div class="payment-card">
+            <h4 class="left-margin margin-above">Pay with card</h4>
+            <input class="card-number left-margin margin-above" type="text" placeholder="card number"/>
+            <div class="card-details">
+                <input class="date left-margin margin-above" type="text" placeholder="MM/YY"/>
+                <input class="cvv left-margin margin-above" type="text" placeholder="CVV"/>
+            </div>
+        </div>
+        <div class="payment-submit">
+            <button class="payment-button">Make Payment</button>
+        </div>
+    </div>
+    <div class="confirmation-div">
+        <div class="confirmation-heading">
+            <h1>Remove?</h1>
+        </div>
+        <div class="confirm-para left-margin">
+            <p>Please Confirm this, you can't redo this again</p>
+        </div>
+        <button class="confirm-button">confirm</button>
+        <a class="center grey">Take me back</a>
+    </div>
+    <div class="success-div">
+        <div class="img-tick">
+            <img src="./download.jpeg" alt="tick"/>
+        </div>
+        <div class="success-heading">
+            <h1>Success</h1>
+        </div>
+        <div class="success-para">
+            <p>Your payment was proccessed</p>
+        </div>
+    </div>
+    <div class="invoice-div">
+        <div class="invoice-heading">
+            <h1 class="left">Invoice</h1>
+            <a class="grey right margin-above-dbl">Download</a>
+        </div>
+        <div class="invoice-details">
+            <div class="left grey">Pro Membership</div>
+            <div class="right grey">$869</div>
+            <div class="box left-margin"></div>           
+            <div class="left grey">Platform Fee</div>
+            <div class="right grey">$10</div>
+        </div>
+        <div class="invoice-total">
+            <div class="left"><b>Total</b></div>
+            <div class="right">$879</div>
+        </div>
+    </div>
+    <script>
+        let make_payment_button = document.getElementsByClassName('payment-button')[0];
+        let confirm_button = document.getElementsByClassName('confirm-button')[0];
+        let link1 = document.getElementsByTagName('a')[0];
+        make_payment_button.addEventListener('click',function(){
+            let payment = document.getElementsByClassName('payment-div')[0];
+            let confirm = document.getElementsByClassName('confirmation-div')[0];
+            payment.style.display="none";
+            confirm.style.display="block";
+        });
+        confirm_button.addEventListener('click',function(){
+            let confirm = document.getElementsByClassName('confirmation-div')[0];
+            let success = document.getElementsByClassName('success-div')[0];
+            let invoice = document.getElementsByClassName('invoice-div')[0];
+            confirm.style.display="none";
+            success.style.display="block";
+            setTimeout(function(){
+                success.style.display="none";
+                invoice.style.display="block";
+            },3000);
+            
+        });
+        link1.addEventListener('click',function(){
+            let payment = document.getElementsByClassName('payment-div')[0];
+            let confirm = document.getElementsByClassName('confirmation-div')[0];
+            payment.style.display="block";
+            confirm.style.display="none";
+        });
+    </script>
+</body>
+</html>
