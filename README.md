@@ -1,6 +1,6 @@
 # Sample-form-design
 ## Design
-
+![design img](./design.png)
 ## Working
 Given below is the sample form design page of a Website 
 - Each form component is different & chained on below format
